@@ -61,7 +61,7 @@ Before running the project, ensure:
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/sanalsunny007/Justlife_HomeCleaning.git
 cd Justlife_HomeCleaning
 ```
 ### 2️⃣ Configure database in `application.yml`
