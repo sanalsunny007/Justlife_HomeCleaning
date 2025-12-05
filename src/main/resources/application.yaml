@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: cleaning
+
+  datasource:
+    url: jdbc:mysql://172.16.16.168:3306/justlife
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: adeptus
+    password: Adeptus123
+
+  flyway:
+    enabled: false  #flyway migration is disabled
+    baseline-on-migrate: true
+    create-schemas: true
+    validate-on-migrate: true
+    clean-disabled: false
+    locations: classpath:db/migration
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: info
+    org.springframework: INFO
+
+# swagger ui will be at /swagger-ui/index.html
