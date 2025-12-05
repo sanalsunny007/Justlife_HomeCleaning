@@ -207,13 +207,15 @@ POST /api/v1/bookings
 **Response**
 ```json
 {
-"bookingId": 101,
-"customerName": "John Doe",
-"startDateTime": "2025-12-05T10:00",
-"endDateTime": "2025-12-05T12:00",
-"cleanerIds": [2, 3],
-"vehicleId": 1,
-"status": "CONFIRMED"
+  "cleanerIds": [2, 3],
+  "customerName": "John Doe",
+  "durationHours": 2,
+  "endDateTime": "2025-12-05T12:00:00",
+  "id": 101,
+  "requiredCleanerCount": 2,
+  "startDateTime": "2025-12-05T10:00:00",
+  "status": "CONFIRMED",
+  "vehicleId": 1
 }
 ```
 ### 🔄 4. Update Booking
@@ -229,12 +231,15 @@ PUT /api/v1/bookings/101
 **Response**
 ```json
 {
-"bookingId": 101,
-"startDateTime": "2025-12-05T14:00",
-"endDateTime": "2025-12-05T16:00",
-"cleanerIds": [2, 3],
-"vehicleId": 1,
-"status": "CONFIRMED"
+  "cleanerIds": [2, 3],
+  "customerName": "John Doe",
+  "durationHours": 2,
+  "endDateTime": "2025-12-06T20:00:00",
+  "id": 101,
+  "requiredCleanerCount": 2,
+  "startDateTime": "2025-12-06T16:00:00",
+  "status": "CONFIRMED",
+  "vehicleId": 1
 }
 ```
 
@@ -248,12 +253,14 @@ GET /api/v1/bookings/101
 **Response**
 ```json
 {
-  "bookingId": 101,
-  "customerName": "John Doe",
-  "startDateTime": "2025-12-05T10:00",
-  "endDateTime": "2025-12-05T12:00",
   "cleanerIds": [2, 3],
-  "vehicleId": 1,
-  "status": "CONFIRMED"
+  "customerName": "John Doe",
+  "durationHours": 2,
+  "endDateTime": "2025-12-06T20:00:00",
+  "id": 101,
+  "requiredCleanerCount": 2,
+  "startDateTime": "2025-12-06T16:00:00",
+  "status": "CONFIRMED",
+  "vehicleId": 1
 }
 ```
