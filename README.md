@@ -234,10 +234,10 @@ PUT /api/v1/bookings/101
   "cleanerIds": [2, 3],
   "customerName": "John Doe",
   "durationHours": 2,
-  "endDateTime": "2025-12-06T20:00:00",
+  "endDateTime": "2025-12-06T16:00:00",
   "id": 101,
   "requiredCleanerCount": 2,
-  "startDateTime": "2025-12-06T16:00:00",
+  "startDateTime": "2025-12-06T14:00:00",
   "status": "CONFIRMED",
   "vehicleId": 1
 }
