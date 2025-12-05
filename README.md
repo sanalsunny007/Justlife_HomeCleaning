@@ -184,7 +184,8 @@ GET /api/v1/availability/slot?date=2025-12-05&start=10:00&durationHours=2
   {
     "cleanerId": 2,
     "cleanerName": "Cleaner-1-2",
-    "vehicleId": 1
+    "vehicleId": 1,
+    "vehicleName": "Vehicle-1"
   }
 ]
 ```
